@@ -36,6 +36,7 @@ public class mobileLogin extends AppCompatActivity {
             }
         });
     }
+    }
 
 //    public void numChecker() {
 //        mobile.addTextChangedListener(new TextWatcher() {

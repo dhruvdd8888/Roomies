@@ -6,4 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".mobileLogin">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/saf"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:src="@drawable/logo">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Let's Go to Find your RoomMates!!"
+                android:layout_marginTop="-60dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/loginPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:drawablePadding="12dp"
+                    android:hint="Phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/loginBtn"
+                android:layout_width="320dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Login"
+                android:layout_height="50dp"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
