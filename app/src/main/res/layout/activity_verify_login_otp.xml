@@ -43,22 +43,49 @@
             android:gravity="center"
             android:text="enter otp we sent in your phone number"
             android:textColor="@color/black"
-            android:textSize="14sp">
+            android:textSize="16sp">
         </TextView>
 
-        <TextView
-            android:id="@+id/textMobile"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="50dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold">
+            android:orientation="horizontal">
 
-        </TextView>
+            <TextView
+                android:id="@+id/textMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/BackToLoginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="2dp"
+                android:gravity="center"
+                android:text="Is your Number or You Want to change"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/BackToMobileLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="5dp"
+                android:gravity="center"
+                android:text="Go Back"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12sp">
+            </TextView>
+        </LinearLayout>
 
 
         <LinearLayout
