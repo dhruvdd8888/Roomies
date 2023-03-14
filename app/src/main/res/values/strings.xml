@@ -1,3 +1,20 @@
 <resources>
+    <string name="tnctext">
+            Roomies app have these tnc\n\n\n
+        * You must share app to all friends\n\n
+        * You must never delete app\n\n
+        * You cannot file case on us \n\n
+        Thank You
+    </string>
+
+
+    <string name="prptext">
+            Roomies app have these Privacy Policies\n\n\n
+        * We can take everything like facebook does\n\n
+        * We can sell your data like Indian government did\n\n
+        * Your privacy is ours least priority(or privacy is completely ignored)\n\n
+        Thank you
+    </string>
+
     <string name="app_name">Roomies</string>
 </resources>

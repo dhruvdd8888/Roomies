@@ -14,7 +14,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class verifyLoginOtp extends AppCompatActivity {
 
-        TextView resentotpBtn;
+        TextView resentotpBtn,backToMobile;
         EditText otp1, otp2, otp3, otp4;
 
         @Override
@@ -25,8 +25,9 @@ public class verifyLoginOtp extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_verify_login_otp);
 
-
             resentotpBtn = findViewById(R.id.resentOtp);
+            backToMobile = findViewById(R.id.BackToMobileLogin);
+
             TextView mobilex = findViewById(R.id.textMobile);
             String mbIntent = getIntent().getStringExtra("mobile");
             mbIntent = mbIntent.substring(0, 2) + "xxxxx" + mbIntent.substring(7, 10);
@@ -45,6 +46,17 @@ public class verifyLoginOtp extends AppCompatActivity {
                     resentSnack.show();
                 }
             });
+
+            backToMobile.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent intent = new Intent(verifyLoginOtp.this, mobileLogin.class);
+                    verifyLoginOtp.this.startActivity(intent);
+                    verifyLoginOtp.this.finish();
+
+                }
+            });
+
+
 
         }
 

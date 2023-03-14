@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
             android:background="@color/saf"
             android:orientation="vertical">
 
@@ -55,7 +55,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:inputType="phone"
-                    android:textAlignment="center"
                     android:drawablePadding="12dp"
                     android:hint="Phone" />
             </com.google.android.material.textfield.TextInputLayout>

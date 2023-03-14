@@ -22,25 +22,6 @@ public class mobileLogin extends AppCompatActivity {
         mobile = findViewById(R.id.loginPhone);
 
         getOtpBtn = findViewById(R.id.loginBtn);
-
-        numChecker();
-        getOtpBtn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                int lenIp = mobile.getText().toString().length();
-                if (mobile.getText().toString().isEmpty()) {
-                    mobile.setError("Enter Mobile Number");
-                } else if (lenIp == 10) {
-                    Intent intent = new Intent(mobileLogin.this, verifyLoginOtp.class);
-                    intent.putExtra("mobile", mobile.getText().toString());
-                    mobileLogin.this.startActivity(intent);
-                } else {
-                    mobile.setError("Mobile number incorrect");
-                }
-            }
-        });
-    }
-
-    public void numChecker() {
         mobile.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
@@ -58,5 +39,21 @@ public class mobileLogin extends AppCompatActivity {
                 }
             }
         });
+        getOtpBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                int lenIp = mobile.getText().toString().length();
+                if (mobile.getText().toString().isEmpty()) {
+                    mobile.setError("Enter Mobile Number");
+                } else if (lenIp == 10) {
+                    Intent intent = new Intent(mobileLogin.this, verifyLoginOtp.class);
+                    intent.putExtra("mobile", mobile.getText().toString());
+                    mobileLogin.this.startActivity(intent);
+                    mobileLogin.this.finish();
+                } else {
+                    mobile.setError("Mobile number incorrect");
+                }
+            }
+        });
     }
+
 }

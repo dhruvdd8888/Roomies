@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="saf">#f0a729</color>
+    <color name="safdark">#EFA31E</color>
+    <color name="safdarker">#D68C0B</color>
     <color name="red">#eb1e0c</color>
     <color name="sec">#fed8b1</color>
     <color name="option">#fae2c5</color>
