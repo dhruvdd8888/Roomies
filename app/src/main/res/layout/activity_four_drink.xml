@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@color/saf"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="278dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/drink" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp">
+
+
+        <TextView
+            android:id="@+id/occasionally"
+            android:background="@drawable/option_btn"
+            android:layout_marginTop="70dp"
+            android:layout_width="270dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="Occasionally"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/moderate"
+            android:background="@drawable/option_btn"
+            android:layout_marginTop="30dp"
+            android:layout_width="270dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="Moderate"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/nonDrinker"
+            android:background="@drawable/option_btn"
+            android:layout_marginTop="30dp"
+            android:layout_width="270dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="Non-Drinker"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
