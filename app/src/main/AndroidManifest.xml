@@ -18,6 +18,24 @@
             android:name=".firstDetails"
             android:exported="false" />
         <activity
+            android:name=".study"
+            android:exported="false" />
+        <activity
+            android:name=".smoker"
+            android:exported="false" />
+        <activity
+            android:name=".food"
+            android:exported="false" />
+        <activity
+            android:name=".religion"
+            android:exported="false" />
+        <activity
+            android:name=".drink"
+            android:exported="false" />
+        <activity
+            android:name=".sleeping"
+            android:exported="false" />
+        <activity
             android:name=".verifyLoginOtp"
             android:exported="false" />
         <activity
