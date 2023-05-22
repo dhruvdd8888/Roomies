@@ -34,6 +34,7 @@
             android:textStyle="bold">
         </TextView>
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,11 +44,9 @@
             android:gravity="center"
             android:text="Enter otp we sent in your phone number"
             android:textColor="@color/black"
-            android:textSize="16sp">
-        </TextView>
+            android:textSize="16sp" />
 
-
-            <TextView
+        <TextView
                 android:id="@+id/textMobile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,7 +58,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
             <TextView
                 android:layout_width="wrap_content"
