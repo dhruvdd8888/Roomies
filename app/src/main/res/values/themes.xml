@@ -13,7 +13,4 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="Shape" parent="">
-        <item name="cornerSize">5%</item>
-    </style>
 </resources>
