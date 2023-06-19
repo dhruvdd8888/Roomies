@@ -25,7 +25,7 @@
                 android:layout_height="63dp"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
-                android:text="Field Of Study?"
+                android:text="Field Of Study"
                 android:textColor="@color/black"
                 android:textSize="28dp"
                 app:layout_constraintBottom_toBottomOf="parent"
