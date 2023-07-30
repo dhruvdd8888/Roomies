@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,130 +12,89 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="17dp">
 
-        <ImageView
-            android:id="@+id/ivMain"
-            android:layout_width="126dp"
-            android:layout_height="126dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_5078__1_"
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="670dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivMain"
+                android:layout_width="393dp"
+                android:layout_height="570dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_5078__1_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/NameOFUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="BHAVIN PARMAR"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="593dp" />
+
+            <TextView
+                android:id="@+id/UserAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:text="21"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameOFUser" />
+
+            <TextView
+                android:id="@+id/Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:text="vadodara"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.035"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/UserAge" />
+
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:text="BHAVIN PARMAR"
-            android:textSize="16sp"
+            android:id="@+id/MoreInfoBTN"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/option_btn"
+            android:gravity="center"
+            android:text="i"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28dp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            app:layout_constraintLeft_toRightOf="@+id/ivMain"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="B.Tech CSE-AI"
-            android:textSize="10dp"
-            android:textColor="@color/black"
-            app:layout_constraintLeft_toLeftOf="@id/tvTitle"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
-
-        <TextView
-            android:id="@+id/Area"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="VADODARA"
-            android:textSize="10dp"
-            android:textColor="@color/black"
-            app:layout_constraintLeft_toLeftOf="@id/tvTitle"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp"
-            app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
-            app:layout_constraintLeft_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Area">
-
-            <TextView
-                android:id="@+id/four_drink"
-                android:layout_width="50dp"
-                android:layout_height="15dp"
-                android:background="@drawable/select_option"
-                android:height="13dp">
-            </TextView>
-            <TextView
-                android:id="@+id/seven_religion"
-                android:layout_width="50dp"
-                android:layout_height="15dp"
-                android:layout_marginLeft="6dp"
-                android:background="@drawable/select_option"
-                android:height="13dp">
-            </TextView>
-            <TextView
-                android:id="@+id/six_food"
-                android:layout_width="50dp"
-                android:layout_height="15dp"
-                android:layout_marginLeft="6dp"
-                android:background="@drawable/select_option"
-                android:height="13dp">
-            </TextView>
-            <TextView
-                android:id="@+id/three_smoker"
-                android:layout_width="50dp"
-                android:layout_height="15dp"
-                android:layout_marginLeft="6dp"
-                android:background="@drawable/select_option"
-                android:height="13dp">
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="25dp"
-            app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
-            app:layout_constraintLeft_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Area">
-            <TextView
-                android:id="@+id/first_bio1"
-                android:layout_width="50dp"
-                android:layout_height="15dp"
-                android:background="@drawable/select_option"
-                android:height="13dp">
-            </TextView>
-            <TextView
-                android:id="@+id/sleeping"
-                android:layout_width="50dp"
-                android:layout_height="15dp"
-                android:layout_marginLeft="6dp"
-                android:background="@drawable/select_option"
-                android:height="13dp">
-            </TextView>
-            <TextView
-                android:id="@+id/dob"
-                android:layout_width="50dp"
-                android:layout_height="15dp"
-                android:layout_marginLeft="6dp"
-                android:background="@drawable/select_option"
-                android:height="13dp">
-            </TextView>
-        </LinearLayout>
+            tools:layout_editor_absoluteX="314dp"
+            tools:layout_editor_absoluteY="623dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
