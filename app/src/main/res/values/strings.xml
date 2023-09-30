@@ -17,4 +17,6 @@
     </string>
 
     <string name="app_name">Roomies</string>
+    <string name="verify_your_identity">Verify your identity</string>
+    <string name="upload">Upload</string>
 </resources>
