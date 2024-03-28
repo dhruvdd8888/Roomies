@@ -5,8 +5,6 @@ import android.widget.TextView;
 import android.content.Intent;
 import android.view.View;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.TextViewCompat;
 
